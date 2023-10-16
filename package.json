@@ -12,7 +12,9 @@
     "vite": "^2.4.4"
   },
   "dependencies": {
-    "cross-env": "^7.0.3"
+    "animejs": "^3.2.1",
+    "cross-env": "^7.0.3",
+    "letterizejs": "^2.0.1"
   },
   "name": "portfolio"
 }
