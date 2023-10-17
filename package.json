@@ -3,18 +3,20 @@
   "scripts": {
     "dev": "cross-env TAILWIND_MODE=watch vite",
     "build": "cross-env TAILWIND_MODE=build vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "lint": "eslint . --ext .ts"
   },
   "devDependencies": {
+    "eslint": "^8.51.0",
     "prettier": "^2.5.1",
     "prettier-plugin-tailwindcss": "^0.1.5",
+    "typescript": "^5.2.2",
     "vitawind": "^2.0.0",
     "vite": "^2.4.4"
   },
   "dependencies": {
-    "animejs": "^3.2.1",
     "cross-env": "^7.0.3",
-    "letterizejs": "^2.0.1",
+    "gsap": "^3.12.2",
     "motion": "^10.16.4"
   },
   "name": "portfolio"
