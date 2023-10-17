@@ -14,7 +14,8 @@
   "dependencies": {
     "animejs": "^3.2.1",
     "cross-env": "^7.0.3",
-    "letterizejs": "^2.0.1"
+    "letterizejs": "^2.0.1",
+    "motion": "^10.16.4"
   },
   "name": "portfolio"
 }

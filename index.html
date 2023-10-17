@@ -1,28 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-full">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="stylesheet" href="src/styles/scrolldown.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Martin Bruun - Portfolio</title>
   </head>
-  <body class="h-screen bg-gray-900">
+  <body class="h-full">
     <main class="h-full">
-      <section class="flex h-full flex-col justify-center overflow-hidden">
+      <section class="flex h-full flex-col justify-center bg-gray-900">
         <img
-          class="image_headshot absolute left-10 top-10 max-w-xs rounded-full ring-1 ring-gray-300 ring-opacity-50 drop-shadow-md"
+          class="image__headshot absolute left-10 top-10 max-w-xs rounded-full drop-shadow-md"
           src="./src/assets/me.jpeg"
-          alt="A photo of a man"
+          alt="A photo of a Martin Bruun"
         />
-        <h1
-          class="hero__title transform-translate-x-1/2 absolute right-1/2 top-1/2 flex -translate-y-1/2 justify-center text-center text-9xl text-gray-300"
-        >
-          Hi
-        </h1>
-        <h1 class="hero__martin flex justify-center text-center text-9xl text-gray-300">
-          I'm Martin
-        </h1>
+        <div class="hero__title flex justify-center gap-10 align-middle">
+          <h1 class="">Hi</h1>
+          <span style="font-size: 100px">&#128075;</span>
+        </div>
+        <h1 class="hero__martin flex justify-center text-center">I'm Martin</h1>
+        <div id="mouse-scroll">
+          <div class="mouse">
+            <div class="mouse-in"></div>
+          </div>
+          <div>
+            <span class="down-arrow-1"></span>
+            <span class="down-arrow-2"></span>
+            <span class="down-arrow-3"></span>
+          </div>
+        </div>
       </section>
+      <section class="section__animation flex flex-col bg-gray-900">
+        <h1 class="-translate-x-full opacity-0">I study web development</h1>
+        <h2>At Roskilde Tekniske Skole</h2>
+      </section>
+      <div class="fixed bottom-0 h-1 w-full bg-sky-900" id="progress"></div>
     </main>
     <script type="module" src="./src/main.js"></script>
   </body>
