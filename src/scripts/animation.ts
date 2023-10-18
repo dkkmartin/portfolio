@@ -1,12 +1,17 @@
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
-const tl = gsap.timeline()
+const tl = gsap.timeline({
+  defaults: { duration: 1, delay: 0.5, ease: 'elastic.out(1,1)' },
+})
 
-tl.fromTo('.hero__title', { opacity: 0 }, { y: 0 })
-  .to('.hero__title', { opacity: 1, duration: 1, ease: 'power3.out' })
-  .fromTo('.hero__martin', { opacity: 0 }, { y: 1000 }, '-=1')
-  .to('.hero__martin', { opacity: 1, y: -60, duration: 0.8 })
-  .to('.hero__martin', { y: 0, duration: 0.3 })
-  .to('.hero__title', { y: -10, duration: 0.2 }, '-=0.3')
-  .to('.hero__title', { y: -20, x: -10, duration: 0.2 }, '-=0.3')
+tl.fromTo('.hero__title', { opacity: 0 }, { opacity: 1 })
+  .fromTo('.hero__martin', { opacity: 0, x: -1000 }, { opacity: 1, x: 0 })
+  .fromTo(
+    '.image__headshot',
+    { opacity: 0, x: 2000 },
+    { opacity: 1, x: 200 },
+    '-=1'
+  )
+  .to('.hero', { x: -300 }, '-=1.25')
+  .fromTo('#mouse-scroll', { opacity: 0 }, { opacity: 1 })

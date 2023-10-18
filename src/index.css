@@ -9,6 +9,9 @@ html {
 section {
   scroll-snap-align: end;
   height: 101vh;
+  overflow: hidden;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
   @apply bg-gray-900;
 }
 
@@ -19,5 +22,17 @@ a {
 h1,
 h2,
 h3 {
-  @apply text-9xl text-gray-300;
+  @apply text-gray-300;
+}
+
+h1 {
+  @apply text-9xl;
+}
+
+h2 {
+  @apply text-7xl;
+}
+
+h3 {
+  @apply text-5xl;
 }
