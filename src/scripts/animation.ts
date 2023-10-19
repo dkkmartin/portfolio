@@ -48,6 +48,37 @@ tlScroll
     '-=1.1'
   )
   .to('.section__scrollTrigger h2', { opacity: 0, delay: 0.2, duration: 2 })
-  .to('.section__scrollTrigger h2', { text: 'I am learning about' }, '-=1.5')
-  .to('.section__scrollTrigger h2', { top: '5%' }, '-=1.5')
-  .to('.section__scrollTrigger h2', { opacity: 1 }, '-=1')
+  .fromTo('.h3__first', { opacity: 0 }, { opacity: 1 }, '-=1.5')
+  .fromTo(
+    '.ul__first > *',
+    { opacity: 0, scale: 0, rotate: 180 },
+    {
+      scale: 1.2,
+      rotate: 0,
+      opacity: 1,
+      stagger: {
+        each: 0.15,
+        from: 'start',
+        grid: 'auto',
+        ease: 'power2.inOut',
+      },
+    },
+    '-=1'
+  )
+  .fromTo('.h3__second', { opacity: 0 }, { opacity: 1 }, '+=0.3')
+  .fromTo(
+    '.ul__second > *',
+    { opacity: 0, scale: 0, rotate: 180 },
+    {
+      scale: 1.2,
+      rotate: 0,
+      opacity: 1,
+      stagger: {
+        each: 0.15,
+        from: 'start',
+        grid: 'auto',
+        ease: 'power2.inOut',
+      },
+    },
+    '-=0.3'
+  )

@@ -24,34 +24,166 @@
         </h1>
       </section>
       <section class="section__scrollTrigger grid grid-cols-[1.2fr_2fr]">
-        <div class="flex h-full flex-col gap-2 p-4 pl-20">
-          <div>
-            <h2
-              class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
-            >
-              I study web devlopment
-            </h2>
-          </div>
-          <ul class="text-gray-300">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Javascript</li>
-            <li>Sass</li>
-            <li>Node</li>
-            <li>Figma</li>
-            <li>Git</li>
-            <li>Webpack</li>
+        <h2 class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
+          I study web devlopment
+        </h2>
+        <div class="learning__div flex flex-col justify-evenly">
+          <h3 class="h3__first text-center">At RTS, I am learning</h3>
+          <ul
+            class="ul__first grid grid-cols-4 grid-rows-2 content-center gap-y-20 text-gray-300"
+          >
+            <li class="flex flex-col items-center">
+              HTML
+              <a
+                target="_blank"
+                href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+                ><img
+                  src="src/assets/logos/icons8-html.svg"
+                  alt="Logo for HTML"
+              /></a>
+            </li>
+            <li class="flex flex-col items-center">
+              CSS
+              <a
+                target="_blank"
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+                ><img src="src/assets/logos/icons8-css.svg" alt="Logo for CSS"
+              /></a>
+            </li>
+            <li class="flex flex-col items-center">
+              Javascript
+              <a
+                target="_blank"
+                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+              >
+                <img
+                  src="src/assets/logos/icons8-javascript.svg"
+                  alt="Logo for Javascript"
+                />
+              </a>
+            </li>
+            <li class="flex flex-col items-center">
+              Sass
+              <a target="_blank" href="https://sass-lang.com/"
+                ><img
+                  src="src/assets/logos/icons8-sass.svg"
+                  alt="Logo for Sass"
+              /></a>
+            </li>
+            <li class="flex flex-col items-center">
+              Node
+              <a target="_blank" href="https://nodejs.org/en">
+                <img
+                  src="src/assets/logos/icons8-nodejs.svg"
+                  alt="Logo for Node"
+                />
+              </a>
+            </li>
+            <li class="flex flex-col items-center">
+              React
+              <a target="_blank" href="https://react.dev/">
+                <img
+                  src="src/assets/logos/icons8-react.svg"
+                  alt="Logo for React"
+                />
+              </a>
+            </li>
+            <li class="flex flex-col items-center">
+              Git
+              <a target="_blank" href="https://git-scm.com/"
+                ><img src="src/assets/logos/icons8-git.svg" alt="Logo for Git"
+              /></a>
+            </li>
+            <li class="flex flex-col items-center">
+              Webpack
+              <a target="_blank" href="https://webpack.js.org/">
+                <img
+                  src="src/assets/logos/icons8-webpack.svg"
+                  alt="Logo for Webpack"
+                />
+              </a>
+            </li>
+          </ul>
+          <h3 class="h3__second text-center">I also tinker with</h3>
+          <ul
+            class="ul__second grid grid-cols-4 grid-rows-2 content-center gap-y-20 text-gray-300"
+          >
+            <li class="flex flex-col items-center">
+              Typescript
+              <a target="_blank" href="https://www.typescriptlang.org/">
+                <img
+                  src="src/assets/logos/icons8-typescript.svg"
+                  alt="Logo for Typescript"
+                />
+              </a>
+            </li>
+            <li class="flex flex-col items-center">
+              Tailwind
+              <a target="_blank" href="https://tailwindcss.com/">
+                <img
+                  src="src/assets/logos/icons8-tailwind-css.svg"
+                  alt="Logo for Tailwind"
+                />
+              </a>
+            </li>
+            <li class="flex flex-col items-center">
+              Vite
+              <a target="_blank" href="https://vitejs.dev/">
+                <img
+                  src="src/assets/logos/icons8-vite(1).svg"
+                  alt="Logo for vite"
+                />
+              </a>
+            </li>
+            <li class="flex flex-col items-center">
+              Svelte
+              <a target="_blank" href="https://svelte.dev/">
+                <img
+                  src="src/assets/logos/icons8-svelte.svg"
+                  alt="Logo for svelte"
+                />
+              </a>
+            </li>
+            <li class="flex flex-col items-center">
+              Astro
+              <a target="_blank" href="https://astro.build/">
+                <img
+                  class="max-w-[47px]"
+                  src="src/assets/logos/astro.png"
+                  alt="Logo for Astro"
+              /></a>
+            </li>
+            <li class="flex flex-col items-center">
+              API <img src="" alt="" />
+            </li>
+            <li class="flex flex-col items-center">
+              GSAP
+              <img
+                class="max-w-[47px]"
+                src="src/assets/logos/gsap-greensock.svg"
+                alt="Logo for GSAP"
+              />
+            </li>
+            <li class="flex flex-col items-center">
+              Vim
+              <a target="_blank" href="https://www.vim.org/"
+                ><img
+                  class="max-w-[47px]"
+                  src="src/assets/logos/vim.png"
+                  alt="Logo for Vim"
+              /></a>
+            </li>
           </ul>
         </div>
-        <div class="images__div grid grid-cols-2 grid-rows-2">
+        <div class="images__div grid max-h-dvh grid-cols-2 grid-rows-2">
           <picture class="col-span-2 col-start-1 row-span-2 row-start-1">
             <source
-              class="h-full w-full"
+              class="h-full"
               media="(max-width:1000px)"
               srcset="src/assets/bg-rts-m.webp"
             />
             <img
-              class="h-full w-full"
+              class="h-full object-contain"
               src="src/assets/bg-rts.webp"
               alt="Roskilde Tekniske Skole"
             />
@@ -63,6 +195,9 @@
           />
         </div>
       </section>
+      <section>
+        <h2>My projects</h2>
+      </section>
       <div id="mouse-scroll">
         <div class="mouse">
           <div class="mouse-in"></div>
@@ -73,7 +208,7 @@
           <span class="down-arrow-3"></span>
         </div>
       </div>
-      <div class="fixed bottom-0 h-1 w-full bg-sky-900" id="progress"></div>
+      <div class="fixed bottom-0 h-1 w-full bg-gray-300" id="progress"></div>
     </main>
     <script type="module" src="./src/main.ts"></script>
   </body>

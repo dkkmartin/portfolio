@@ -29,10 +29,11 @@ h1 {
   @apply text-9xl;
 }
 
-h2 {
+h2,
+h3 {
   @apply text-6xl;
 }
 
-h3 {
-  @apply text-5xl;
+li img {
+  max-width: 62px;
 }
