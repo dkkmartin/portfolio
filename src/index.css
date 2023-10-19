@@ -8,7 +8,7 @@ html {
 
 section {
   scroll-snap-align: end;
-  height: 101vh;
+  height: 100vh;
   overflow: hidden;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
@@ -30,7 +30,7 @@ h1 {
 }
 
 h2 {
-  @apply text-7xl;
+  @apply text-6xl;
 }
 
 h3 {

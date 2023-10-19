@@ -23,9 +23,29 @@
           I'm Martin
         </h1>
       </section>
-      <section class="section__animation flex flex-col">
-        <h2>I study web development</h2>
-        <h2>At Roskilde Tekniske Skole</h2>
+      <section class="section__animation grid grid-cols-[1.2fr_2fr]">
+        <div class="flex flex-col gap-2 p-4">
+          <h2>I study web development at RTS</h2>
+        </div>
+        <div class="grid grid-cols-2 grid-rows-2">
+          <picture class="col-span-2 col-start-1 row-span-2 row-start-1">
+            <source
+              class="h-full w-full"
+              media="(max-width:1000px)"
+              srcset="src/assets/bg-rts-m.webp"
+            />
+            <img
+              class="h-full w-full"
+              src="src/assets/bg-rts.webp"
+              alt="Roskilde Tekniske Skole"
+            />
+          </picture>
+          <img
+            class="col-start-1 row-start-1"
+            src="src/assets/rts-logo.png"
+            alt=""
+          />
+        </div>
       </section>
       <div id="mouse-scroll">
         <div class="mouse">
