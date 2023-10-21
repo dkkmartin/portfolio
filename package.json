@@ -17,7 +17,8 @@
   "dependencies": {
     "cross-env": "^7.0.3",
     "gsap": "^3.12.2",
-    "motion": "^10.16.4"
+    "motion": "^10.16.4",
+    "swiper": "^10.3.1"
   },
   "name": "portfolio"
 }

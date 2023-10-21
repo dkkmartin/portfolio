@@ -6,6 +6,10 @@
     <link rel="stylesheet" href="src/styles/scrolldown.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Martin Bruun - Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
   </head>
   <body class="h-full">
     <main class="h-full">
@@ -195,8 +199,43 @@
           />
         </div>
       </section>
-      <section>
-        <h2>My projects</h2>
+      <section class="flex flex-col justify-center">
+        <div class="swiper mySwiper h-[80%] w-[55%]">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide flex flex-col items-center justify-around">
+              <h3>CharTyper</h3>
+              <div class="card__video max-h-[360px] max-w-[640px] border">
+                <img
+                  class="h-full"
+                  src="src/assets/projects/chartyper-img.png"
+                  alt="Image of a project"
+                />
+                <video class="hidden h-full" loop>
+                  <source
+                    src="src/assets/projects/chartyper-video.webm"
+                    type="video/webm"
+                  />
+                </video>
+              </div>
+              <p>A minimalistic, typing test game. etc etc</p>
+              <div class="flex w-full justify-evenly">
+                <a href="#">Demo</a>
+                <img src="" alt="Logo for github" />
+              </div>
+            </div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">Slide 4</div>
+            <div class="swiper-slide">Slide 5</div>
+            <div class="swiper-slide">Slide 6</div>
+            <div class="swiper-slide">Slide 7</div>
+            <div class="swiper-slide">Slide 8</div>
+            <div class="swiper-slide">Slide 9</div>
+          </div>
+
+          <div class="swiper-button-next fixed -right-[20%]"></div>
+          <div class="swiper-button-prev fixed -left-[20%]"></div>
+        </div>
       </section>
       <div id="mouse-scroll">
         <div class="mouse">

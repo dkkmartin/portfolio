@@ -4,10 +4,11 @@
 
 html {
   scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
 }
 
 section {
-  scroll-snap-align: end;
+  scroll-snap-align: center;
   height: 100vh;
   overflow: hidden;
   -webkit-transform: translateZ(0);
@@ -36,4 +37,19 @@ h3 {
 
 li img {
   max-width: 62px;
+}
+
+p {
+  @apply text-2xl text-gray-300;
+}
+
+.swiper-slide {
+  border-radius: 25px;
+  border: 3px solid white;
+  background-color: black;
+}
+
+.swiper-slide:nth-child(even) {
+  background-color: white;
+  border: 3px solid black;
 }
