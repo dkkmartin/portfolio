@@ -1,3 +1,4 @@
+import 'swiper/swiper-bundle.css'
 import './index.css'
 import './scripts/animation'
 import './scripts/motion'

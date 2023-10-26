@@ -26,6 +26,10 @@ h3 {
   @apply text-gray-300;
 }
 
+h4 {
+  @apply text-2xl text-gray-300;
+}
+
 h1 {
   @apply text-9xl;
 }
