@@ -106,7 +106,7 @@
           </ul>
           <h3 class="h3__second text-center">I also tinker with</h3>
           <ul
-            class="ul__second grid grid-cols-4 grid-rows-2 content-center gap-y-20 text-gray-300"
+            class="ul__second grid grid-cols-3 grid-rows-2 content-center gap-y-20 text-gray-300"
           >
             <li class="flex flex-col items-center">
               Typescript
@@ -154,22 +154,11 @@
               /></a>
             </li>
             <li class="flex flex-col items-center">
-              API <img src="" alt="" />
-            </li>
-            <li class="flex flex-col items-center">
-              GSAP
-              <img
-                class="max-w-[47px]"
-                src="src/assets/logos/gsap-greensock.svg"
-                alt="Logo for GSAP"
-              />
-            </li>
-            <li class="flex flex-col items-center">
-              Vim
-              <a target="_blank" href="https://www.vim.org/"
+              Express
+              <a target="_blank" href="https://expressjs.com/"
                 ><img
                   class="max-w-[47px]"
-                  src="src/assets/logos/vim.png"
+                  src="src/assets/logos/icons8-express-js.svg"
                   alt="Logo for Vim"
               /></a>
             </li>
@@ -198,7 +187,9 @@
       <section class="flex flex-col justify-center">
         <div class="swiper mySwiper h-[80%] w-[55%]">
           <div class="swiper-wrapper">
-            <div class="swiper-slide flex flex-col items-center justify-around">
+            <div
+              class="swiper-slide flex flex-col items-center justify-around p-10"
+            >
               <h3>CharTyper</h3>
               <div class="card__video max-h-[360px] max-w-[640px] border">
                 <img
@@ -206,16 +197,55 @@
                   src="src/assets/projects/chartyper-img.png"
                   alt="Image of a project"
                 />
-                <video class="hidden h-full" loop>
-                  <source
-                    src="src/assets/projects/chartyper-video.webm"
-                    type="video/webm"
-                  />
-                </video>
               </div>
-              <p>A minimalistic, typing test game. etc etc</p>
+              <p class="text-center">
+                A minimalist typing test web app under active development.
+                Features include a typing test with Words Per Minute
+                calculation, accuracy tracking, a leaderboard, user
+                authentication, and a backend powered by Pocketbase.
+              </p>
+              <div class="flex w-full flex-col gap-5">
+                <h4 class="text-center">Built with</h4>
+                <div class="flex w-full justify-evenly">
+                  <a
+                    target="_blank"
+                    href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+                    ><img
+                      src="src/assets/logos/icons8-html.svg"
+                      alt="Logo for HTML"
+                  /></a>
+                  <a
+                    target="_blank"
+                    href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+                    ><img
+                      src="src/assets/logos/icons8-css.svg"
+                      alt="Logo for CSS"
+                  /></a>
+                  <img
+                    src="src/assets/logos/icons8-javascript.svg"
+                    alt="JavaScript logo"
+                  />
+                  <a target="_blank" href="https://pocketbase.io/">
+                    <img
+                      src="src/assets/logos/pocketbase.svg"
+                      alt="Pocketbase logo"
+                    />
+                  </a>
+                  <a target="_blank" href="https://vitejs.dev/">
+                    <img
+                      src="src/assets/logos/icons8-vite(1).svg"
+                      alt="Vite logo"
+                    />
+                  </a>
+                </div>
+              </div>
               <div class="flex w-full items-center justify-evenly">
-                <a class="text-lg" href="#">Demo</a>
+                <a
+                  class="text-2xl"
+                  target="_blank"
+                  href="https://chartyper.martinbruun.dk"
+                  >Demo</a
+                >
                 <a
                   target="_blank"
                   href="https://github.com/dkkmartin/CharTyper"
@@ -226,25 +256,70 @@
                   />
                 </a>
               </div>
+            </div>
+            <div
+              class="swiper-slide flex flex-col items-center justify-around p-10"
+            >
+              <h3 class="text-black">Karmen</h3>
+              <div class="card__video max-h-[360px] max-w-[640px]">
+                <img
+                  class="h-full w-full object-contain"
+                  src="src/assets/projects/karmen.webp"
+                  alt="Image of a project"
+                />
+              </div>
+              <p class="text-center text-black">
+                A school project webshop dedicated to environmentally friendly
+                products. Features include a functional product selection, a
+                shopping basket with adjustable quantities, and a payment form.
+              </p>
               <div class="flex w-full flex-col gap-5">
-                <h4 class="text-center">Built with</h4>
+                <h4 class="text-center text-black">Built with</h4>
                 <div class="flex w-full justify-evenly">
+                  <a
+                    target="_blank"
+                    href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+                    ><img
+                      src="src/assets/logos/icons8-html.svg"
+                      alt="Logo for HTML"
+                  /></a>
+                  <a
+                    target="_blank"
+                    href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+                    ><img
+                      src="src/assets/logos/icons8-css.svg"
+                      alt="Logo for CSS"
+                  /></a>
                   <img
-                    src="src/assets/logos/icons8-tailwind-css.svg"
-                    alt="Tailwind logo"
+                    src="src/assets/logos/icons8-javascript.svg"
+                    alt="JavaScript logo"
                   />
-                  <img
-                    src="src/assets/logos/icons8-typescript.svg"
-                    alt="Typescript logo"
-                  />
-                  <img
-                    src="src/assets/logos/icons8-vite(1).svg"
-                    alt="Vite logo"
-                  />
+                  <a target="_blank" href="https://astro.build/">
+                    <img
+                      class="max-w-[48px]"
+                      src="src/assets/logos/astro.png"
+                      alt="Logo for Astro"
+                  /></a>
                 </div>
               </div>
+              <div class="flex w-full items-center justify-evenly">
+                <a
+                  class="text-2xl"
+                  target="_blank"
+                  href="https://chartyper.martinbruun.dk"
+                  >Demo</a
+                >
+                <a
+                  target="_blank"
+                  href="https://github.com/dkkmartin/CharTyper"
+                >
+                  <img
+                    src="src/assets/logos/icons8-github.svg"
+                    alt="Logo for github"
+                  />
+                </a>
+              </div>
             </div>
-            <div class="swiper-slide">Slide 2</div>
             <div class="swiper-slide">Slide 3</div>
             <div class="swiper-slide">Slide 4</div>
             <div class="swiper-slide">Slide 5</div>
