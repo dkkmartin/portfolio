@@ -5,7 +5,7 @@
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <link rel="stylesheet" href="src/styles/scrolldown.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Martin Bruun - Portfolio</title>
+    <title>Martin Bruun</title>
   </head>
   <body class="h-full">
     <main class="h-full">
@@ -16,14 +16,14 @@
           alt="A photo of a Martin Bruun"
         />
         <div class="hero hero__title flex justify-center gap-10 align-middle">
-          <h1 class="h1__hi">Hi</h1>
+          <h1>Hi</h1>
           <span style="font-size: 100px">&#128075;</span>
         </div>
         <h1 class="hero hero__martin flex justify-center text-center">
           I'm Martin
         </h1>
       </section>
-      <section class="section__scrollTrigger grid grid-cols-[1.2fr_2fr]">
+      <section class="section__school grid grid-cols-[1.2fr_2fr]">
         <h2 class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
           I study web devlopment
         </h2>
@@ -184,11 +184,16 @@
           />
         </div>
       </section>
-      <section class="flex flex-col justify-center">
+      <section class="section__projects flex flex-col justify-center">
+        <h3
+          class="projects__h3 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-center"
+        >
+          Some of my favorite projects
+        </h3>
         <div class="swiper mySwiper h-[80%] w-[55%]">
           <div class="swiper-wrapper">
             <div
-              class="swiper-slide flex flex-col items-center justify-around p-10"
+              class="swiper-slide flex flex-col items-center justify-around px-7 py-2"
             >
               <h3>CharTyper</h3>
               <div class="card__video max-h-[360px] max-w-[640px] border">
@@ -199,13 +204,13 @@
                 />
               </div>
               <p class="text-center">
-                A minimalist typing test web app under active development.
-                Features include a typing test with Words Per Minute
-                calculation, accuracy tracking, a leaderboard, user
-                authentication, and a backend powered by Pocketbase.
+                A minimalist typing test game under active development. Features
+                include a typing test with Words Per Minute calculation,
+                accuracy tracking, a leaderboard, user authentication, and a
+                backend powered by Pocketbase.
               </p>
               <div class="flex w-full flex-col gap-5">
-                <h4 class="text-center">Built with</h4>
+                <h4 class="text-center text-3xl">Built with</h4>
                 <div class="flex w-full justify-evenly">
                   <a
                     target="_blank"
@@ -258,12 +263,12 @@
               </div>
             </div>
             <div
-              class="swiper-slide flex flex-col items-center justify-around p-10"
+              class="swiper-slide flex flex-col items-center justify-around px-7 py-2"
             >
               <h3 class="text-black">Karmen</h3>
               <div class="card__video max-h-[360px] max-w-[640px]">
                 <img
-                  class="h-full w-full object-contain"
+                  class="h-full w-full border border-black object-contain"
                   src="src/assets/projects/karmen.webp"
                   alt="Image of a project"
                 />
@@ -274,7 +279,7 @@
                 shopping basket with adjustable quantities, and a payment form.
               </p>
               <div class="flex w-full flex-col gap-5">
-                <h4 class="text-center text-black">Built with</h4>
+                <h4 class="text-center text-3xl text-black">Built with</h4>
                 <div class="flex w-full justify-evenly">
                   <a
                     target="_blank"
@@ -306,12 +311,67 @@
                 <a
                   class="text-2xl"
                   target="_blank"
-                  href="https://chartyper.martinbruun.dk"
+                  href="https://dkkmartin.github.io/karmen/"
                   >Demo</a
                 >
+                <a target="_blank" href="https://github.com/dkkmartin/karmen">
+                  <img
+                    src="src/assets/logos/icons8-github.svg"
+                    alt="Logo for github"
+                  />
+                </a>
+              </div>
+            </div>
+            <div
+              class="swiper-slide flex flex-col items-center justify-around px-7 py-2"
+            >
+              <h3>Hifi-corner</h3>
+              <div class="card__video max-h-[360px] max-w-[640px] border">
+                <img
+                  class="h-full"
+                  src="src/assets/projects/hifi-corner.webp"
+                  alt="Image of a project"
+                />
+              </div>
+              <p class="text-center">
+                A school project featuring a HIFI product webshop. Utilizes
+                Json-server to mimic a REST API for product data. Key features
+                include a product searchbar, a products page with sorting and
+                filters.
+              </p>
+              <div class="flex w-full flex-col gap-5">
+                <h4 class="text-center text-3xl">Built with</h4>
+                <div class="flex w-full justify-evenly">
+                  <a
+                    target="_blank"
+                    href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+                    ><img
+                      src="src/assets/logos/icons8-html.svg"
+                      alt="Logo for HTML"
+                  /></a>
+                  <a
+                    target="_blank"
+                    href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+                    ><img
+                      src="src/assets/logos/icons8-css.svg"
+                      alt="Logo for CSS"
+                  /></a>
+                  <img
+                    src="src/assets/logos/icons8-javascript.svg"
+                    alt="JavaScript logo"
+                  />
+                  <a target="_blank" href="https://astro.build/">
+                    <img
+                      class="max-w-[48px]"
+                      src="src/assets/logos/astro-light.png"
+                      alt="Logo for Astro"
+                  /></a>
+                </div>
+              </div>
+              <div class="flex w-full items-center justify-evenly">
                 <a
                   target="_blank"
-                  href="https://github.com/dkkmartin/CharTyper"
+                  href="https://github.com/dkkmartin/hifi-corner"
                 >
                   <img
                     src="src/assets/logos/icons8-github.svg"
@@ -320,19 +380,70 @@
                 </a>
               </div>
             </div>
-            <div class="swiper-slide">Slide 3</div>
-            <div class="swiper-slide">Slide 4</div>
-            <div class="swiper-slide">Slide 5</div>
-            <div class="swiper-slide">Slide 6</div>
-            <div class="swiper-slide">Slide 7</div>
-            <div class="swiper-slide">Slide 8</div>
-            <div class="swiper-slide">Slide 9</div>
+            <div
+              class="swiper-slide flex flex-col items-center justify-around px-7 py-2"
+            >
+              <h3 class="text-black">Todo</h3>
+              <div
+                class="card__video max-h-[360px] max-w-[640px] border border-black"
+              >
+                <img
+                  class="h-full"
+                  src="src/assets/projects/todo.webp"
+                  alt="Image of a project"
+                />
+              </div>
+              <p class="text-center text-black">
+                A straightforward Todo App with essential features for managing
+                tasks. You can create new todos, edit existing ones, and set due
+                dates. You can also categorize your tasks into different
+                projects and even prioritize them.
+              </p>
+              <div class="flex w-full flex-col gap-5">
+                <h4 class="text-center text-3xl text-black">Built with</h4>
+                <div class="flex w-full justify-evenly">
+                  <a
+                    target="_blank"
+                    href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+                    ><img
+                      src="src/assets/logos/icons8-html.svg"
+                      alt="Logo for HTML"
+                  /></a>
+                  <a
+                    target="_blank"
+                    href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+                    ><img
+                      src="src/assets/logos/icons8-css.svg"
+                      alt="Logo for CSS"
+                  /></a>
+                  <img
+                    src="src/assets/logos/icons8-javascript.svg"
+                    alt="JavaScript logo"
+                  />
+                </div>
+              </div>
+              <div class="flex w-full items-center justify-evenly">
+                <a
+                  class="text-2xl"
+                  target="_blank"
+                  href="https://dkkmartin.github.io/todo/"
+                  >Demo</a
+                >
+                <a target="_blank" href="https://github.com/dkkmartin/todo">
+                  <img
+                    src="src/assets/logos/icons8-github.svg"
+                    alt="Logo for github"
+                  />
+                </a>
+              </div>
+            </div>
           </div>
 
           <div class="swiper-button-next fixed -right-[20%]"></div>
           <div class="swiper-button-prev fixed -left-[20%]"></div>
         </div>
       </section>
+      <section class="section__aboutme flex flex-col justify-center"></section>
       <div id="mouse-scroll">
         <div class="mouse">
           <div class="mouse-in"></div>
@@ -343,7 +454,7 @@
           <span class="down-arrow-3"></span>
         </div>
       </div>
-      <div class="fixed bottom-0 h-1 w-full bg-gray-300" id="progress"></div>
+      <div class="fixed bottom-0 h-1 w-full bg-indigo-300" id="progress"></div>
     </main>
     <script type="module" src="./src/main.ts"></script>
   </body>

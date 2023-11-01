@@ -8,13 +8,25 @@ const tl = gsap.timeline({
   defaults: { duration: 1, delay: 0.5, ease: 'elastic.out(1,1)' },
 })
 
-const tlScroll = gsap.timeline({
+const tlScrollSchool = gsap.timeline({
   defaults: {
     duration: 1,
     ease: 'elastic.out(1,1)',
   },
   scrollTrigger: {
-    trigger: '.section__scrollTrigger',
+    trigger: '.section__school',
+    start: 'top top',
+    end: 'center center',
+  },
+})
+
+const tlScrollProjects = gsap.timeline({
+  defaults: {
+    duration: 1,
+    ease: 'elastic.out(1,1)',
+  },
+  scrollTrigger: {
+    trigger: '.section__projects',
     start: 'top top',
     end: 'center center',
   },
@@ -38,16 +50,16 @@ tl.fromTo('.hero__title', { opacity: 0 }, { opacity: 1 })
   .fromTo('#mouse-scroll', { opacity: 0 }, { opacity: 0.5 })
 
 // School scrollTrigger
-tlScroll
-  .fromTo('.section__scrollTrigger h2', { opacity: 0 }, { opacity: 1 })
-  .to('.section__scrollTrigger h2', { left: '20%', ease: 'power1.out' })
+tlScrollSchool
+  .fromTo('.section__school h2', { opacity: 0 }, { opacity: 1 })
+  .to('.section__school h2', { left: '20%', ease: 'power1.out' })
   .fromTo(
     '.images__div',
     { opacity: 0, x: 1000 },
     { opacity: 1, x: 0, ease: 'power1.out', duration: 1.2 },
     '-=1.1'
   )
-  .to('.section__scrollTrigger h2', { opacity: 0, delay: 0.2, duration: 2 })
+  .to('.section__school h2', { opacity: 0, delay: 0.2, duration: 2 })
   .fromTo('.h3__first', { opacity: 0 }, { opacity: 1 }, '-=1.5')
   .fromTo(
     '.ul__first > *',
@@ -82,3 +94,14 @@ tlScroll
     },
     '-=0.3'
   )
+
+tlScrollProjects
+  .fromTo(
+    '.projects__h3',
+    {
+      opacity: 0,
+    },
+    { opacity: 1, duration: 1.5 }
+  )
+  .to('.projects__h3', { opacity: 0 })
+  .fromTo('.mySwiper', { opacity: 0 }, { opacity: 1 }, '-=0.5')
