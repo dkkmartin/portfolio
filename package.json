@@ -34,10 +34,11 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"bits-ui": "^0.21.13",
+		"bits-ui": "^0.21.15",
 		"clsx": "^2.1.1",
 		"mode-watcher": "^0.4.1",
 		"svelte-motion": "^0.12.2",
-		"tailwind-merge": "^2.5.2"
+		"tailwind-merge": "^2.5.2",
+		"tailwind-variants": "^0.2.1"
 	}
 }
