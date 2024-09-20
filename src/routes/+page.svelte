@@ -1,12 +1,9 @@
 <script>
-	import Hero from '../components/Hero.svelte';
-	import MarqueeExample from '../components/marquee/MarqueeIcons.svelte';
+	import Hero from '$lib/components/Hero.svelte'
 </script>
 
-<section>
+<section class="h-[calc(100dvh-72px)] flex flex-col justify-around">
 	<Hero />
 </section>
 
-<section>
-	<MarqueeExample />
-</section>
+<section></section>
