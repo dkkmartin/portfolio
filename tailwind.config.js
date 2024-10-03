@@ -16,7 +16,8 @@ const config = {
 		extend: {
 			animation: {
 				marquee: 'marquee var(--duration) linear infinite',
-				'marquee-vertical': 'marquee-vertical var(--duration) linear infinite'
+				'marquee-vertical': 'marquee-vertical var(--duration) linear infinite',
+				orbit: 'orbit calc(var(--duration)*1s) linear infinite'
 			},
 			keyframes: {
 				marquee: {
@@ -26,6 +27,14 @@ const config = {
 				'marquee-vertical': {
 					from: { transform: 'translateY(0)' },
 					to: { transform: 'translateY(calc(-100% - var(--gap)))' }
+				},
+				orbit: {
+					'0%': {
+						transform: 'rotate(0deg) translateY(calc(var(--radius) * 1px)) rotate(0deg)'
+					},
+					'100%': {
+						transform: 'rotate(360deg) translateY(calc(var(--radius) * 1px)) rotate(-360deg)'
+					}
 				}
 			},
 			colors: {
@@ -41,6 +50,10 @@ const config = {
 				secondary: {
 					DEFAULT: 'hsl(var(--secondary) / <alpha-value>)',
 					foreground: 'hsl(var(--secondary-foreground) / <alpha-value>)'
+				},
+				secondaryBackground: {
+					DEFAULT: 'hsl(var(--secondary-background) / <alpha-value>)',
+					foreground: 'hsl(var(--secondary-background-foreground) / <alpha-value>)'
 				},
 				destructive: {
 					DEFAULT: 'hsl(var(--destructive) / <alpha-value>)',
