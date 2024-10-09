@@ -37,17 +37,11 @@
 		</Motion>
 
 		<Motion variants={itemVariants} let:motion>
-			<div use:motion class="grid grid-cols-2 items-center gap-2 max-h-10">
+			<div use:motion>
 				<div>
 					<WordsFadeIn
-						words="Front-end"
-						class="text-2xl md:text-4xl text-gray-600 dark:text-primary-dark"
-					/>
-				</div>
-				<div class="self-center relative h-10">
-					<WordRotate
-						words={['Developer', 'Enthusiast', 'Learner', 'Problem-Solver']}
-						class="text-2xl md:text-4xl text-gray-600 dark:text-primary-dark absolute top-0 text-nowrap w-[300px]"
+						words="Front-end developer"
+						class="text-xl md:text-3xl text-gray-600 dark:text-primary-dark"
 					/>
 				</div>
 			</div>
@@ -55,7 +49,9 @@
 
 		<Motion variants={itemVariants} let:motion>
 			<div class="pt-6" use:motion>
-				<Button>Resume</Button>
+				<a href="https://rxresu.me/dkkmartin/cv" target="_blank">
+					<Button>Resume</Button>
+				</a>
 			</div>
 		</Motion>
 	</div>
