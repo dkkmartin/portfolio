@@ -1,6 +1,11 @@
-<script>
+<script lang="ts">
 	import LayersCard from '$lib/components/card/LayersCard.svelte'
 	import Hero from '$lib/components/Hero.svelte'
+	import ProjectCard from '$lib/components/project/projectCard.svelte'
+	import type { Root } from '$lib/types/projectType'
+
+	export let data: Root
+	console.log(data)
 </script>
 
 <section class="h-[calc(100dvh-72px)] flex flex-col justify-around">
@@ -9,7 +14,7 @@
 
 <section class="h-screen flex items-center justify-around bg-secondaryBackground/20">
 	<div class="flex flex-col items-center gap-4">
-		<h2 class="text-4xl font-bold">About me</h2>
+		<h2 class="text-4xl font-bold">$~: whoami</h2>
 		<p class="max-w-2xl text-center">
 			I'm a recently graduated front-end developer with a passion for creating beautiful and
 			functional web applications. While I'm new to the professional world of development, I've
@@ -27,6 +32,11 @@
 	</LayersCard>
 </section>
 
-<section class="h-screen flex justify-around">
-	<h3 class="text-4xl font-bold">Projects</h3>
+<section class="py-16 container mx-auto px-4 h-screen">
+	<h3 class="text-4xl font-bold mb-12 text-center">Projects</h3>
+	<div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+		{#each data.projects as project}
+			<ProjectCard {project} />
+		{/each}
+	</div>
 </section>
