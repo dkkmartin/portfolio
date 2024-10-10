@@ -20,14 +20,10 @@
 			(currentIndex - 1 + project.images_url.length + (project.video_url ? 1 : 0)) %
 			(project.images_url.length + (project.video_url ? 1 : 0))
 	}
-
-	function handleIplayMusicLink() {
-		console.log('iPlayMusic')
-	}
 </script>
 
 <div
-	class="bg-white dark:bg-secondaryBackground/20 rounded-lg shadow-md overflow-hidden flex flex-col lg:flex-row border border-white/5"
+	class="bg-white dark:bg-secondaryBackground/20 rounded-lg shadow-md overflow-hidden flex flex-col lg:flex-row border border-white/5 min-h-[534px]"
 >
 	<div class="relative w-full lg:w-1/2 h-80 lg:h-auto">
 		<div class="absolute inset-0 flex items-center justify-center">
@@ -56,11 +52,13 @@
 			</button>
 		{/if}
 	</div>
-	<div class="p-8 flex-1">
-		<h4 class="text-2xl font-semibold mb-4">{project.name}</h4>
-		<p class="text-gray-600 dark:text-gray-300 mb-6 text-lg">{project.description}</p>
+	<div class="p-8 flex-1 flex flex-col gap-4">
+		<div class="flex flex-col gap-2 flex-1">
+			<h4 class="text-2xl font-semibold">{project.name}</h4>
+			<p class="text-gray-600 dark:text-gray-300 text-lg">{project.description}</p>
+		</div>
 
-		<div class="flex flex-wrap gap-2 mb-6">
+		<div class="flex flex-wrap gap-2">
 			{#each project.technologies as tech}
 				<a href={tech.url} target="_blank" rel="noopener noreferrer">
 					<Button>{tech.title}</Button>
@@ -68,7 +66,7 @@
 			{/each}
 		</div>
 
-		<div class="mb-6">
+		<div>
 			<p class="text-sm text-gray-500">
 				{formatDate(project.start_date)} - {project.end_date
 					? formatDate(project.end_date)
@@ -90,18 +88,16 @@
 					<ToolTip
 						text="Because of spotify api restrictions, the live demo wont work unless you have been whitelisted"
 					>
-						<button on:click={handleIplayMusicLink} class="text-green-500 hover:underline text-lg">
-							Live Demo
-						</button>
+						<button class="text-green-500 hover:underline text-lg"> Live Demo </button>
 					</ToolTip>
+				{:else}
+					<a
+						href={project.live_url}
+						target="_blank"
+						rel="noopener noreferrer"
+						class="text-green-500 hover:underline text-lg">Live Demo</a
+					>
 				{/if}
-			{:else}
-				<a
-					href={project.live_url}
-					target="_blank"
-					rel="noopener noreferrer"
-					class="text-green-500 hover:underline text-lg">Live Demo</a
-				>
 			{/if}
 		</div>
 	</div>
