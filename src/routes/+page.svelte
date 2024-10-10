@@ -12,6 +12,7 @@
 </section>
 
 <section
+	id="section-2"
 	class="min-h-screen flex gap-4 flex-col md:flex-row items-center justify-around bg-secondaryBackground/20 p-4"
 >
 	<div class="flex flex-col items-center gap-4">
@@ -33,7 +34,7 @@
 	</LayersCard>
 </section>
 
-<section class="py-16 container mx-auto px-4 min-h-screen">
+<section id="section-3" class="py-16 container mx-auto px-4 min-h-screen">
 	<h3 class="text-4xl font-bold mb-12 text-center">Projects</h3>
 	<div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
 		{#each data.projects as project}
