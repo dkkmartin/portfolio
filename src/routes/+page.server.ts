@@ -9,5 +9,7 @@ export const load = (async () => {
 		return { projects: [], error: error.message }
 	}
 
-	return { projects }
+	const sortedProjects = (projects ?? []).sort((a, b) => a.order - b.order)
+
+	return { projects: sortedProjects }
 }) satisfies PageServerLoad
