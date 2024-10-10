@@ -1,5 +1,5 @@
 <div class="py-8">
-	<div class="relative max-w-xl">
+	<div class="relative max-w-52 md:max-w-xl">
 		<div
 			class="absolute scale-x-95 inset-0 -rotate-[10deg] rounded-lg bg-gray-200 dark:bg-zinc-800 py-10 shadow-[0px_0px_16px_#D4D4D8]"
 		></div>
