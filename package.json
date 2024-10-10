@@ -38,6 +38,7 @@
 		"@supabase/supabase-js": "^2.45.4",
 		"bits-ui": "^0.21.15",
 		"clsx": "^2.1.1",
+		"dotenv": "^16.4.5",
 		"mode-watcher": "^0.4.1",
 		"svelte-motion": "^0.12.2",
 		"tailwind-merge": "^2.5.2",
