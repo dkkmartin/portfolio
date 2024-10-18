@@ -4,7 +4,6 @@
 	import { Motion } from 'svelte-motion'
 	import Button from './ui/button/button.svelte'
 	import MarqueeWithIcons from '$lib/components/marquee/MarqueeWithIcons.svelte'
-	import WordRotate from './words/WordRotate.svelte'
 
 	const containerVariants = {
 		hidden: { opacity: 0 },
@@ -23,7 +22,7 @@
 </script>
 
 <Motion variants={containerVariants} initial="hidden" animate="visible" let:motion>
-	<div class="flex flex-col items-center justify-center" use:motion>
+	<div class="flex flex-col items-center justify-center pt-20" use:motion>
 		<Motion variants={itemVariants} let:motion>
 			<div use:motion>
 				<WordsPullUp words="Hi, I'm" class="text-4xl md:text-6xl" />
