@@ -1,22 +1,14 @@
 import type { Metadata } from 'next';
-import { Fira_Sans, Fira_Mono } from 'next/font/google';
+import { GeistSans } from 'geist/font/sans';
+
 import './globals.css';
-
-const firaSans = Fira_Sans({
-  weight: ['100', '300', '400', '700'],
-  variable: '--font-fira-sans',
-  display: 'swap',
-});
-
-const firaMono = Fira_Mono({
-  weight: ['400', '700'],
-  variable: '--font-fira-mono',
-  display: 'swap',
-});
+import Header from '@/components/header';
+import { Background } from '@/components/background';
+import { ThemeProvider } from 'next-themes';
 
 export const metadata: Metadata = {
-  title: 'Martin Bruun | Portfolio',
-  description: 'My portfolio',
+  title: 'Martin Bruun',
+  description: 'A beautiful and interactive portfolio built with Next.js and Tailwind',
 };
 
 export default function RootLayout({
@@ -25,8 +17,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${firaSans.variable} ${firaMono.variable} antialiased`}>{children}</body>
+    <html lang="en" suppressHydrationWarning>
+      <body className={`${GeistSans.className} antialiased `}>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <Background />
+          <Header />
+          <main className="max-w-[576px] mx-auto py-10">{children}</main>
+        </ThemeProvider>
+      </body>
     </html>
   );
 }
