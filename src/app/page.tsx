@@ -1,3 +1,5 @@
+import TechStack from '@/components/techStack';
+import UnderLineAnimation from '@/components/underlineAnimation';
 import Image from 'next/image';
 
 export default function Home() {
@@ -12,11 +14,10 @@ export default function Home() {
             Hi, I&apos;m Martin
             <span className="ml-1 inline-block origin-bottom-right animate-wave">👋</span>
           </h1>
-          <h2 className="underline">Front-end developer</h2>
+          <UnderLineAnimation />
         </div>
       </div>
-
-      <div></div>
+      <TechStack />
     </section>
   );
 }
