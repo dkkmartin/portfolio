@@ -24,7 +24,7 @@ export const HoverEffect = ({
           <AnimatePresence>
             {hoveredIndex === idx && (
               <motion.span
-                className="absolute inset-0 bg-gray-200 dark:bg-zinc-800 rounded-md -z-20"
+                className="absolute inset-0 bg-gray-200 dark:bg-muted rounded-md -z-20"
                 layoutId="hoverBackground"
                 initial={{ opacity: 0 }}
                 transition={{ type: 'spring', bounce: 0.3, duration: 0.6 }}
