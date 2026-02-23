@@ -1,5 +1,6 @@
 import { ThemeSwitcher } from './themeSwitcher';
 import { GeistMono } from 'geist/font/mono';
+import Link from 'next/link';
 
 export default function Header() {
   return (
