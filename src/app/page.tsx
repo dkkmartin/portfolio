@@ -58,9 +58,6 @@ export default function Home() {
           <p>current tech stack:</p>
           <TechStack />
         </motion.section>
-        <motion.section variants={itemVariants} className="relative">
-          <RecentProjects />
-        </motion.section>
       </motion.div>
     </>
   );
