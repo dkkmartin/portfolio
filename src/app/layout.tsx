@@ -20,11 +20,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <Script
-        defer
-        data-website-id="2e00be0e-4962-4f16-be60-73438a291cf8"
-        src="https://umami.martinbruun.dk/script.js"
-      />
       <body className={`${GeistSans.className} antialiased`}>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
           <Background />
