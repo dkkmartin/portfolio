@@ -1,6 +1,5 @@
 import * as motion from 'framer-motion/client';
 import Map from '@/components/map';
-import RecentProjects from '@/components/recentProjects';
 import TechStack from '@/components/techStack';
 import UnderLineAnimation from '@/components/underlineAnimation';
 import Image from 'next/image';
