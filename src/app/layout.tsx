@@ -6,7 +6,6 @@ import Header from '@/components/header';
 import { Background } from '@/components/background';
 import { ThemeProvider } from 'next-themes';
 import Footer from '@/components/footer';
-import Script from 'next/script';
 
 export const metadata: Metadata = {
   title: 'Martin Bruun',
