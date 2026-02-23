@@ -1,7 +1,5 @@
 import { ThemeSwitcher } from './themeSwitcher';
 import { GeistMono } from 'geist/font/mono';
-import { Tabs } from './ui/activeTabs';
-import Link from 'next/link';
 
 export default function Header() {
   return (
