@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -28,34 +28,10 @@ export default function Footer() {
             <p className="ml-2 hidden sm:block">GitHub</p>
           </Link>
         </li>
-        <li>
-          <Link
-            className="flex items-center justify-center text-muted-foreground hover:text-primary"
-            rel="noopener noreferrer"
-            target="_blank"
-            href="mailto:martin@martinbruun.dk"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="size-5"
-            >
-              <rect width="20" height="16" x="2" y="4" rx="2"></rect>
-              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
-            </svg>
-            <p className="ml-2 hidden sm:block">Contact</p>
-          </Link>
-        </li>
       </ul>
       <p className="text-muted-foreground">
-        Last updated:&nbsp;<span className="hidden sm:inline">December 3, 2024</span>
+        Last updated:&nbsp;
+        <span className="hidden sm:inline">December 3, 2024</span>
         <span className="sm:hidden">03/12/2024</span>
       </p>
     </footer>

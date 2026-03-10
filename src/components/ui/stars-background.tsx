@@ -1,6 +1,12 @@
-'use client';
-import { cn } from '@/lib/utils';
-import React, { useState, useEffect, useRef, RefObject, useCallback, MouseEvent } from 'react';
+"use client";
+import { cn } from "@/lib/utils";
+import React, {
+  useState,
+  useEffect,
+  useRef,
+  useCallback,
+  MouseEvent,
+} from "react";
 
 interface StarProps {
   x: number;
@@ -33,9 +39,9 @@ export const StarsBackground: React.FC<StarBackgroundProps> = ({
   className,
 }) => {
   const [stars, setStars] = useState<StarProps[]>([]);
-  const [mousePos, setMousePos] = useState<{ x: number; y: number }>();
-  const mousePosRef = useRef<{ x: number; y: number }>();
-  const canvasRef: RefObject<HTMLCanvasElement> = useRef<HTMLCanvasElement>(null);
+  const [mousePos, setMousePos] = useState<{ x: number; y: number } | undefined>();
+  const mousePosRef = useRef<{ x: number; y: number } | undefined>(undefined);
+  const canvasRef = useRef<HTMLCanvasElement>(null);
 
   function handleMouseMove(event: MouseEvent) {
     if (!event) return;
@@ -69,7 +75,8 @@ export const StarsBackground: React.FC<StarBackgroundProps> = ({
           opacity: Math.random() * 0.5 + 0.5,
           twinkleSpeed:
             allStarsTwinkle || Math.random() < twinkleProbability
-              ? minTwinkleSpeed + Math.random() * (maxTwinkleSpeed - minTwinkleSpeed)
+              ? minTwinkleSpeed +
+                Math.random() * (maxTwinkleSpeed - minTwinkleSpeed)
               : null,
           vx: 0,
           vy: 0,
@@ -81,14 +88,20 @@ export const StarsBackground: React.FC<StarBackgroundProps> = ({
 
       return stars;
     },
-    [starDensity, allStarsTwinkle, twinkleProbability, minTwinkleSpeed, maxTwinkleSpeed]
+    [
+      starDensity,
+      allStarsTwinkle,
+      twinkleProbability,
+      minTwinkleSpeed,
+      maxTwinkleSpeed,
+    ],
   );
 
   useEffect(() => {
     const updateStars = () => {
       if (canvasRef.current) {
         const canvas = canvasRef.current;
-        const ctx = canvas.getContext('2d');
+        const ctx = canvas.getContext("2d");
         if (!ctx) return;
 
         const { width, height } = canvas.getBoundingClientRect();
@@ -123,7 +136,7 @@ export const StarsBackground: React.FC<StarBackgroundProps> = ({
     const canvas = canvasRef.current;
     if (!canvas) return;
 
-    const ctx = canvas.getContext('2d');
+    const ctx = canvas.getContext("2d");
     if (!ctx) return;
 
     let animationFrameId: number;
@@ -174,7 +187,9 @@ export const StarsBackground: React.FC<StarBackgroundProps> = ({
         star.vy += (star.initialY - star.y) * returnSpeed;
 
         if (star.twinkleSpeed !== null) {
-          star.opacity = 0.5 + Math.abs(Math.sin((Date.now() * 0.001) / star.twinkleSpeed) * 0.5);
+          star.opacity =
+            0.5 +
+            Math.abs(Math.sin((Date.now() * 0.001) / star.twinkleSpeed) * 0.5);
         }
       });
 
@@ -193,9 +208,9 @@ export const StarsBackground: React.FC<StarBackgroundProps> = ({
       onMouseMove={handleMouseMove}
       ref={canvasRef}
       className={cn(
-        'h-full w-full absolute inset-0',
+        "h-full w-full absolute inset-0",
 
-        className
+        className,
       )}
     />
   );
